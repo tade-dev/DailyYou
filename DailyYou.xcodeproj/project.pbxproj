@@ -29,20 +29,43 @@
 		1ECC14792DCE300600B07913 /* DailyYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1ECC149B2DCE3A6300B07913 /* Exceptions for "DailyYou" folder in "DailyYou" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Tests/DailyYouTests.swift,
+				Tests/DailyYouUITests.swift,
+				Tests/DailyYouUITestsLaunchTests.swift,
+			);
+			target = 1ECC14612DCE300400B07913 /* DailyYou */;
+		};
+		1ECC15162DCE3CF400B07913 /* Exceptions for "DailyYou" folder in "DailyYouTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/DailyYouTests.swift,
+			);
+			target = 1ECC146E2DCE300600B07913 /* DailyYouTests */;
+		};
+		1ECC15172DCE3CF400B07913 /* Exceptions for "DailyYou" folder in "DailyYouUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/DailyYouUITests.swift,
+				Tests/DailyYouUITestsLaunchTests.swift,
+			);
+			target = 1ECC14782DCE300600B07913 /* DailyYouUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1ECC14642DCE300400B07913 /* DailyYou */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1ECC149B2DCE3A6300B07913 /* Exceptions for "DailyYou" folder in "DailyYou" target */,
+				1ECC15162DCE3CF400B07913 /* Exceptions for "DailyYou" folder in "DailyYouTests" target */,
+				1ECC15172DCE3CF400B07913 /* Exceptions for "DailyYou" folder in "DailyYouUITests" target */,
+			);
 			path = DailyYou;
-			sourceTree = "<group>";
-		};
-		1ECC14722DCE300600B07913 /* DailyYouTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DailyYouTests;
-			sourceTree = "<group>";
-		};
-		1ECC147C2DCE300600B07913 /* DailyYouUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DailyYouUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				1ECC14642DCE300400B07913 /* DailyYou */,
-				1ECC14722DCE300600B07913 /* DailyYouTests */,
-				1ECC147C2DCE300600B07913 /* DailyYouUITests */,
 				1ECC14632DCE300400B07913 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +151,6 @@
 			dependencies = (
 				1ECC14712DCE300600B07913 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1ECC14722DCE300600B07913 /* DailyYouTests */,
-			);
 			name = DailyYouTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +170,6 @@
 			);
 			dependencies = (
 				1ECC147B2DCE300600B07913 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1ECC147C2DCE300600B07913 /* DailyYouUITests */,
 			);
 			name = DailyYouUITests;
 			packageProductDependencies = (
@@ -400,9 +415,10 @@
 				DEVELOPMENT_TEAM = VCW7FU3N47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyYou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,9 +444,10 @@
 				DEVELOPMENT_TEAM = VCW7FU3N47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyYou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
