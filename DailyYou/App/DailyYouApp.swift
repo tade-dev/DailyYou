@@ -10,12 +10,19 @@ import SwiftUI
 @main
 struct DailyYouApp: App {
     
-    let defaultFont = Font.custom("Urbanist-Regulat", size: 16)
+    let defaultFont = Font.custom("Urbanist-Regular", size: 16)
     
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.font, defaultFont)
-        }
+        WindowGroup(makeContent: {
+            ZStack {
+                
+                Color.background
+                    .ignoresSafeArea()
+                
+                OnboardingView()
+                
+            }
+            .environment(\.font, defaultFont)
+        })
     }
 }
