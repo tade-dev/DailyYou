@@ -1,4 +1,4 @@
-# Daily You
+# Daily You - 🚧
 
 <div align="center">
   <img src="logo.png" alt="Daily You Logo" width="150">
